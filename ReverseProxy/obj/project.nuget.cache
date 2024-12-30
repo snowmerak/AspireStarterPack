@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "D1DSok5PNSE=",
+  "success": true,
+  "projectFilePath": "/home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/ReverseProxy.csproj",
+  "expectedPackageFiles": [
+    "/home/yongmin/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/yarp.reverseproxy/2.2.0/yarp.reverseproxy.2.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

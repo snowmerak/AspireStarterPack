@@ -10,7 +10,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="add counter server" />
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="change domain name and fix route">
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfoInputs.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +153,7 @@
       <workItem from="1735922868343" duration="23000" />
       <workItem from="1735922899204" duration="19380000" />
       <workItem from="1735976736503" duration="4844000" />
-      <workItem from="1735981601094" duration="2416000" />
+      <workItem from="1735981601094" duration="2739000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -190,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735984011782</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change domain name and fix route">
+      <option name="closed" value="true" />
+      <created>1735984126462</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735984126462</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +218,7 @@
     <MESSAGE value="refactor reverse proxy code" />
     <MESSAGE value="make counter server" />
     <MESSAGE value="add counter server" />
-    <option name="LAST_COMMIT_MESSAGE" value="add counter server" />
+    <MESSAGE value="change domain name and fix route" />
+    <option name="LAST_COMMIT_MESSAGE" value="change domain name and fix route" />
   </component>
 </project>

@@ -35,7 +35,8 @@ public class Configurator
     
     public void Build()
     {
-        _resourceBuilder.WithEnvironment("routes", "/");
+        var routes = _routeMap.Keys.ToImmutableArray();
+        _resourceBuilder.WithEnvironment("routes", string.Join(",", routes));
         foreach (var route in _routeMap)
         {
             _resourceBuilder.WithEnvironment($"route:{route.Key}", string.Join(",", route.Value));

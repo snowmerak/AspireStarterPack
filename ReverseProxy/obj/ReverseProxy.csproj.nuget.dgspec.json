@@ -44,6 +44,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Aspire.Hosting": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Yarp.ReverseProxy": {
               "target": "Package",
               "version": "[2.2.0, )"

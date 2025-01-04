@@ -140,6 +140,60 @@
           "buildMultiTargeting/Aspire.Hosting.Orchestration.linux-x64.targets": {}
         }
       },
+      "Aspire.Hosting.Valkey/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AspNetCore.HealthChecks.Redis": "8.0.1",
+          "AspNetCore.HealthChecks.Uris": "8.0.1",
+          "Aspire.Hosting": "9.0.0",
+          "Google.Protobuf": "3.28.2",
+          "Grpc.AspNetCore": "2.66.0",
+          "Grpc.Net.ClientFactory": "2.66.0",
+          "Grpc.Tools": "2.67.0",
+          "Humanizer.Core": "2.14.1",
+          "JsonPatch.Net": "3.1.1",
+          "KubernetesClient": "15.0.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.11",
+          "Microsoft.Extensions.Hosting": "8.0.1",
+          "Microsoft.Extensions.Hosting.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Http": "8.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "Microsoft.Extensions.Options": "8.0.2",
+          "Microsoft.Extensions.Primitives": "8.0.0",
+          "Polly.Core": "8.4.2",
+          "StackExchange.Redis": "2.8.16"
+        },
+        "compile": {
+          "lib/net8.0/Aspire.Hosting.Valkey.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.Valkey.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AspNetCore.HealthChecks.Redis/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0",
+          "StackExchange.Redis": "2.7.4"
+        },
+        "compile": {
+          "lib/net6.0/HealthChecks.Redis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HealthChecks.Redis.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AspNetCore.HealthChecks.Uris/8.0.1": {
         "type": "package",
         "dependencies": {
@@ -153,6 +207,22 @@
         },
         "runtime": {
           "lib/net5.0/HealthChecks.Uris.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Aspire.Hosting.Golang/9.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Aspire.Hosting": "9.0.0"
+        },
+        "compile": {
+          "lib/net9.0/CommunityToolkit.Aspire.Hosting.Golang.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/CommunityToolkit.Aspire.Hosting.Golang.dll": {
             "related": ".xml"
           }
         }
@@ -1106,6 +1176,22 @@
           }
         }
       },
+      "Pipelines.Sockets.Unofficial/2.2.8": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "5.0.1"
+        },
+        "compile": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Pipelines.Sockets.Unofficial.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Polly.Core/8.4.2": {
         "type": "package",
         "compile": {
@@ -1116,6 +1202,23 @@
         "runtime": {
           "lib/net8.0/Polly.Core.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "StackExchange.Redis/2.8.16": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Pipelines.Sockets.Unofficial": "2.2.8"
+        },
+        "compile": {
+          "lib/net6.0/StackExchange.Redis.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/StackExchange.Redis.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1158,6 +1261,19 @@
         },
         "runtime": {
           "lib/net8.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO.Pipelines/5.0.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         }
@@ -1380,6 +1496,38 @@
         "tools/ext/dcpctrl"
       ]
     },
+    "Aspire.Hosting.Valkey/9.0.0": {
+      "sha512": "f78f8vwgMOnjOo8GM/0RtmCYrc6G5pjgoeg9rKqEG3ACzFM9opiKEqjTvgurooayQHLxk2rTSYT99cq4zqCuHA==",
+      "type": "package",
+      "path": "aspire.hosting.valkey/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "aspire.hosting.valkey.9.0.0.nupkg.sha512",
+        "aspire.hosting.valkey.nuspec",
+        "lib/net8.0/Aspire.Hosting.Valkey.dll",
+        "lib/net8.0/Aspire.Hosting.Valkey.xml"
+      ]
+    },
+    "AspNetCore.HealthChecks.Redis/8.0.1": {
+      "sha512": "45jqq4ydvmm7yKpTf0jEpUuYloe2vlytN9dasmqwmQyorpNbjdvWuyvSmjVZM5nBa5e5ryF5MU+F7bXv6Zp2vQ==",
+      "type": "package",
+      "path": "aspnetcore.healthchecks.redis/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.healthchecks.redis.8.0.1.nupkg.sha512",
+        "aspnetcore.healthchecks.redis.nuspec",
+        "icon.png",
+        "lib/net6.0/HealthChecks.Redis.dll",
+        "lib/net6.0/HealthChecks.Redis.xml",
+        "lib/netstandard2.0/HealthChecks.Redis.dll",
+        "lib/netstandard2.0/HealthChecks.Redis.xml"
+      ]
+    },
     "AspNetCore.HealthChecks.Uris/8.0.1": {
       "sha512": "A1ahRx4pdXjrSGlGFLoyoXOV4Lfp5sfs+OIGfvi14RwecIAac4xs6cP0Q8tw/rv4Ng+KAaYpzD4qhxXVwUcIyA==",
       "type": "package",
@@ -1394,6 +1542,23 @@
         "lib/net5.0/HealthChecks.Uris.xml",
         "lib/netstandard2.0/HealthChecks.Uris.dll",
         "lib/netstandard2.0/HealthChecks.Uris.xml"
+      ]
+    },
+    "CommunityToolkit.Aspire.Hosting.Golang/9.1.0": {
+      "sha512": "Tf/Q+f5T4epuj7zVvIVKs/OHR5LR4F4eYSzm4nzPfnt9J+cqTCSHiYgFPkN9DmPpTl+wRyvNJSGFyb4w7t2HJQ==",
+      "type": "package",
+      "path": "communitytoolkit.aspire.hosting.golang/9.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "communitytoolkit.aspire.hosting.golang.9.1.0.nupkg.sha512",
+        "communitytoolkit.aspire.hosting.golang.nuspec",
+        "lib/net8.0/CommunityToolkit.Aspire.Hosting.Golang.dll",
+        "lib/net8.0/CommunityToolkit.Aspire.Hosting.Golang.xml",
+        "lib/net9.0/CommunityToolkit.Aspire.Hosting.Golang.dll",
+        "lib/net9.0/CommunityToolkit.Aspire.Hosting.Golang.xml",
+        "nuget.png"
       ]
     },
     "Fractions/7.3.0": {
@@ -2784,6 +2949,29 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
+    "Pipelines.Sockets.Unofficial/2.2.8": {
+      "sha512": "zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
+      "type": "package",
+      "path": "pipelines.sockets.unofficial/2.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Pipelines.Sockets.Unofficial.dll",
+        "lib/net461/Pipelines.Sockets.Unofficial.xml",
+        "lib/net472/Pipelines.Sockets.Unofficial.dll",
+        "lib/net472/Pipelines.Sockets.Unofficial.xml",
+        "lib/net5.0/Pipelines.Sockets.Unofficial.dll",
+        "lib/net5.0/Pipelines.Sockets.Unofficial.xml",
+        "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll",
+        "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.xml",
+        "lib/netstandard2.0/Pipelines.Sockets.Unofficial.dll",
+        "lib/netstandard2.0/Pipelines.Sockets.Unofficial.xml",
+        "lib/netstandard2.1/Pipelines.Sockets.Unofficial.dll",
+        "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
+        "pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+        "pipelines.sockets.unofficial.nuspec"
+      ]
+    },
     "Polly.Core/8.4.2": {
       "sha512": "BpE2I6HBYYA5tF0Vn4eoQOGYTYIK1BlF5EXVgkWGn3mqUUjbXAr13J6fZVbp7Q3epRR8yshacBMlsHMhpOiV3g==",
       "type": "package",
@@ -2810,6 +2998,27 @@
         "package-readme.md",
         "polly.core.8.4.2.nupkg.sha512",
         "polly.core.nuspec"
+      ]
+    },
+    "StackExchange.Redis/2.8.16": {
+      "sha512": "WaoulkOqOC9jHepca3JZKFTqndCWab5uYS7qCzmiQDlrTkFaDN7eLSlEfHycBxipRnQY9ppZM7QSsWAwUEGblw==",
+      "type": "package",
+      "path": "stackexchange.redis/2.8.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/StackExchange.Redis.dll",
+        "lib/net461/StackExchange.Redis.xml",
+        "lib/net472/StackExchange.Redis.dll",
+        "lib/net472/StackExchange.Redis.xml",
+        "lib/net6.0/StackExchange.Redis.dll",
+        "lib/net6.0/StackExchange.Redis.xml",
+        "lib/netcoreapp3.1/StackExchange.Redis.dll",
+        "lib/netcoreapp3.1/StackExchange.Redis.xml",
+        "lib/netstandard2.0/StackExchange.Redis.dll",
+        "lib/netstandard2.0/StackExchange.Redis.xml",
+        "stackexchange.redis.2.8.16.nupkg.sha512",
+        "stackexchange.redis.nuspec"
       ]
     },
     "System.Diagnostics.EventLog/9.0.0": {
@@ -2869,6 +3078,32 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "System.IO.Pipelines/5.0.1": {
+      "sha512": "qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
+      "type": "package",
+      "path": "system.io.pipelines/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
+        "lib/netstandard1.3/System.IO.Pipelines.dll",
+        "lib/netstandard1.3/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
+        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.5.0.1.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "YamlDotNet/16.0.0": {
       "sha512": "kZ4jR5ltFhnjaUqK9x81zXRIUTH4PTXTTEmJDNQdkDLQhcv+2Nl19r0dCSvPW1mstOYBfXTnjdieRbUO6gHMDw==",
       "type": "package",
@@ -2898,7 +3133,9 @@
     "net9.0": [
       "Aspire.Dashboard.Sdk.linux-x64 >= 9.0.0",
       "Aspire.Hosting.AppHost >= 9.0.0",
-      "Aspire.Hosting.Orchestration.linux-x64 >= 9.0.0"
+      "Aspire.Hosting.Orchestration.linux-x64 >= 9.0.0",
+      "Aspire.Hosting.Valkey >= 9.0.0",
+      "CommunityToolkit.Aspire.Hosting.Golang >= 9.1.0"
     ]
   },
   "packageFolders": {
@@ -2957,6 +3194,14 @@
             "target": "Package",
             "version": "[9.0.0, )",
             "autoReferenced": true
+          },
+          "Aspire.Hosting.Valkey": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
+          "CommunityToolkit.Aspire.Hosting.Golang": {
+            "target": "Package",
+            "version": "[9.1.0, )"
           }
         },
         "imports": [

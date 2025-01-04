@@ -57,6 +57,14 @@
               "target": "Package",
               "version": "[9.0.0, )",
               "autoReferenced": true
+            },
+            "Aspire.Hosting.Valkey": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "CommunityToolkit.Aspire.Hosting.Golang": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             }
           },
           "imports": [

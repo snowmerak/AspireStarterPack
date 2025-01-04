@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "77IXuvyEH9w=",
+  "dgSpecHash": "K47oyhRMP9E=",
   "success": true,
   "projectFilePath": "/home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/AppHost.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,10 @@
     "/home/yongmin/.nuget/packages/aspire.hosting/9.0.0/aspire.hosting.9.0.0.nupkg.sha512",
     "/home/yongmin/.nuget/packages/aspire.hosting.apphost/9.0.0/aspire.hosting.apphost.9.0.0.nupkg.sha512",
     "/home/yongmin/.nuget/packages/aspire.hosting.orchestration.linux-x64/9.0.0/aspire.hosting.orchestration.linux-x64.9.0.0.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/aspire.hosting.valkey/9.0.0/aspire.hosting.valkey.9.0.0.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/aspnetcore.healthchecks.redis/8.0.1/aspnetcore.healthchecks.redis.8.0.1.nupkg.sha512",
     "/home/yongmin/.nuget/packages/aspnetcore.healthchecks.uris/8.0.1/aspnetcore.healthchecks.uris.8.0.1.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/communitytoolkit.aspire.hosting.golang/9.1.0/communitytoolkit.aspire.hosting.golang.9.1.0.nupkg.sha512",
     "/home/yongmin/.nuget/packages/fractions/7.3.0/fractions.7.3.0.nupkg.sha512",
     "/home/yongmin/.nuget/packages/google.protobuf/3.28.2/google.protobuf.3.28.2.nupkg.sha512",
     "/home/yongmin/.nuget/packages/grpc.aspnetcore/2.66.0/grpc.aspnetcore.2.66.0.nupkg.sha512",
@@ -60,9 +63,12 @@
     "/home/yongmin/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.1.2/microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
     "/home/yongmin/.nuget/packages/microsoft.identitymodel.logging/7.1.2/microsoft.identitymodel.logging.7.1.2.nupkg.sha512",
     "/home/yongmin/.nuget/packages/microsoft.identitymodel.tokens/7.1.2/microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "/home/yongmin/.nuget/packages/polly.core/8.4.2/polly.core.8.4.2.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/stackexchange.redis/2.8.16/stackexchange.redis.2.8.16.nupkg.sha512",
     "/home/yongmin/.nuget/packages/system.diagnostics.eventlog/9.0.0/system.diagnostics.eventlog.9.0.0.nupkg.sha512",
     "/home/yongmin/.nuget/packages/system.identitymodel.tokens.jwt/7.1.2/system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
+    "/home/yongmin/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
     "/home/yongmin/.nuget/packages/yamldotnet/16.0.0/yamldotnet.16.0.0.nupkg.sha512"
   ],
   "logs": []

@@ -10,13 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="refactor reverse proxy code">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.work" beforeDir="false" afterPath="$PROJECT_DIR$/go.work" afterDir="false" />
-    </list>
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="add counter server" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -153,7 +148,7 @@
       <workItem from="1735922868343" duration="23000" />
       <workItem from="1735922899204" duration="19380000" />
       <workItem from="1735976736503" duration="4844000" />
-      <workItem from="1735981601094" duration="2002000" />
+      <workItem from="1735981601094" duration="2416000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -179,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735983211868</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="make counter server">
+      <option name="closed" value="true" />
+      <created>1735983999521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735983999521</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add counter server">
+      <option name="closed" value="true" />
+      <created>1735984011782</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735984011782</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +203,8 @@
     <MESSAGE value="init project" />
     <MESSAGE value="make reverse proxy configurator" />
     <MESSAGE value="refactor reverse proxy code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor reverse proxy code" />
+    <MESSAGE value="make counter server" />
+    <MESSAGE value="add counter server" />
+    <option name="LAST_COMMIT_MESSAGE" value="add counter server" />
   </component>
 </project>

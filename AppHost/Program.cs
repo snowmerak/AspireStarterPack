@@ -21,7 +21,7 @@ for (var i = 0; i < 8; i++)
     var counterServer = builder.AddGolangApp(name, "../CounterServer")
         .WithHttpEndpoint(env: "PORT")
         .WithReference(cache);
-    reverseProxyConfigurator.AddService("/counter", counterServer);
+    reverseProxyConfigurator.AddService("/count", counterServer);
 }
 
 reverseProxyConfigurator.Build();

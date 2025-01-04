@@ -20,14 +20,20 @@ public class Configurator
     }
     
     private static string MakeServiceName(string name, int index) => $"services__{name}__http__{index}";
-    
-    public Configurator AddService(string route, IResourceBuilder<IResourceWithServiceDiscovery> resourceBuilder)
+
+    public Configurator AddService(string route, IResourceBuilder<IResourceWithServiceDiscovery> resourceBuilder,
+        int replica = 1)
     {
         if (!_routeMap.TryGetValue(route, out List<string> list))
         {
             list = new List<string>();
         }
-        list.Add(MakeServiceName(resourceBuilder.Resource.Name, 0));
+
+        for (var i = 0; i < replica; i++)
+        {
+            list.Add(MakeServiceName(resourceBuilder.Resource.Name, i));
+        }
+
         _routeMap[route] = list;
         _resourceBuilder.WithReference(resourceBuilder);
         return this;

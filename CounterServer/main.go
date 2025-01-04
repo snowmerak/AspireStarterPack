@@ -21,7 +21,7 @@ func main() {
 	id := generatedUUID.String()
 
 	cacheClient, err := valkey.NewClient(valkey.ClientOption{
-		InitAddress: []string{"SharedCache:6379"},
+		InitAddress: []string{os.Getenv("ConnectionStrings__SharedCache")},
 	})
 	if err != nil {
 		log.Fatalf("Failed to create cache client: %v", err)

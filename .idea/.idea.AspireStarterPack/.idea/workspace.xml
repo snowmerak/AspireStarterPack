@@ -10,7 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="change domain name and fix route">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="fix routes">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" afterDir="false" />
@@ -21,6 +22,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -28,9 +32,12 @@
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/ReverseProxy/Configurator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -45,20 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Aspire Host.AppHost: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Aspire Host.AppHost: http">
     <configuration name="AppHost: http" type="AspireHostConfiguration" factoryName="Aspire Host" activateToolWindowBeforeRun="false">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AppHost/AppHost.csproj" />
@@ -153,7 +161,7 @@
       <workItem from="1735922868343" duration="23000" />
       <workItem from="1735922899204" duration="19380000" />
       <workItem from="1735976736503" duration="4844000" />
-      <workItem from="1735981601094" duration="2739000" />
+      <workItem from="1735981601094" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -203,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735984126462</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix routes">
+      <option name="closed" value="true" />
+      <created>1735984561169</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735984561169</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +235,7 @@
     <MESSAGE value="make counter server" />
     <MESSAGE value="add counter server" />
     <MESSAGE value="change domain name and fix route" />
-    <option name="LAST_COMMIT_MESSAGE" value="change domain name and fix route" />
+    <MESSAGE value="fix routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix routes" />
   </component>
 </project>

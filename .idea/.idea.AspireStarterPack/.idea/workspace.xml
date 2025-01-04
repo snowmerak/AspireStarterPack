@@ -10,12 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="fix routes">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="build file...">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +31,10 @@
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/ReverseProxy/Configurator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -161,7 +159,7 @@
       <workItem from="1735922868343" duration="23000" />
       <workItem from="1735922899204" duration="19380000" />
       <workItem from="1735976736503" duration="4844000" />
-      <workItem from="1735981601094" duration="3816000" />
+      <workItem from="1735981601094" duration="5477000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -219,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735984561169</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="build file...">
+      <option name="closed" value="true" />
+      <created>1735986628384</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735986628385</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +242,7 @@
     <MESSAGE value="add counter server" />
     <MESSAGE value="change domain name and fix route" />
     <MESSAGE value="fix routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix routes" />
+    <MESSAGE value="build file..." />
+    <option name="LAST_COMMIT_MESSAGE" value="build file..." />
   </component>
 </project>

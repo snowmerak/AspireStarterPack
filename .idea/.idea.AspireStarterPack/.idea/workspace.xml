@@ -10,36 +10,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="refactor reverse proxy code">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net9.0/AppHost.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/net9.0/ReverseProxy.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.work" beforeDir="false" afterPath="$PROJECT_DIR$/go.work" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +26,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReverseProxy.Hosting/ReverseProxyResource.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReverseProxy.Hosting/ReverseProxyResourceBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -175,7 +153,7 @@
       <workItem from="1735922868343" duration="23000" />
       <workItem from="1735922899204" duration="19380000" />
       <workItem from="1735976736503" duration="4844000" />
-      <workItem from="1735981601094" duration="1246000" />
+      <workItem from="1735981601094" duration="2002000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -185,7 +163,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735581403055</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="make reverse proxy configurator">
+      <option name="closed" value="true" />
+      <created>1735983079366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735983079366</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor reverse proxy code">
+      <option name="closed" value="true" />
+      <created>1735983211868</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735983211868</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +190,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="make reverse proxy configurator" />
+    <MESSAGE value="refactor reverse proxy code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor reverse proxy code" />
   </component>
 </project>

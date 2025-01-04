@@ -1,0 +1,97 @@
+# Windows
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.pdsync
+*.psess
+*.vsp
+*.vspx
+*.sap
+*_i.c
+*_p.c
+*.ncb
+*.sbr
+*.cache
+hsperfdata/
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+*.temp
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Build output
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+
+# MSTest test Results
+[Tt]est[Rr]esults/
+
+# Packages
+packages/
+
+# Source Control
+*.vssscc
+.svn
+*.vspscc
+*.vssscc
+
+# Minimum Recommended Rules
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Pp][Pp][Dd]ata/
+[Ll]ocal[Ss]ettings/
+[Tt]emp/
+[Tt]emporaryASP.NET Files/
+
+## MonoDevelop
+*.pidb
+*.userprefs
+
+## MonoTouch
+*.monotouch
+
+## Visual Studio Code
+.vscode/

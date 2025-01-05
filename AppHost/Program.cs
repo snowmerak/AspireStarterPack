@@ -2,13 +2,13 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var reverseProxy = builder.AddReverseProxy("ReverseProxy")
-    .WithReplicas(4)
+    .WithReplicas(2)
     .WithExternalHttpEndpoints()
     .WithHttpEndpoint(name: "http", port: 5000, env: "PORT", isProxied: true);
 
 var cache = builder.AddValkey(name: "SharedCache");
 
-for (var i = 0; i < 8; i++)
+for (var i = 0; i < 4; i++)
 {
     var name = $"EchoServer-{i}";
     var echoServer = builder.AddGolangApp(name, "../EchoServer")
@@ -16,7 +16,7 @@ for (var i = 0; i < 8; i++)
     reverseProxy.AddService("/echo", echoServer);
 }
 
-for (var i = 0; i < 8; i++)
+for (var i = 0; i < 4; i++)
 {
     var name = $"CounterServer-{i}";
     var counterServer = builder.AddGolangApp(name, "../CounterServer")

@@ -1,0 +1,7 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "workloads": "aspire"
+    }
+  }
+}

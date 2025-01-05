@@ -23,3 +23,7 @@ dotnet run
 ### counter
 
 - GET: http://localhost:5000/count
+
+## Special Thanks
+
+- [@naratteu](https://github.com/naratteu)

@@ -10,8 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="build file...">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSet.Host.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireStarterPack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspireStarterPack.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.work" beforeDir="false" afterPath="$PROJECT_DIR$/go.work" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.work.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.work.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/ReverseProxy/Configurator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/obj/Debug/net9.0/AppHost.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReverseProxy/obj/Debug/net9.0/ReverseProxy.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -50,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Aspire Host.AppHost: http.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Aspire Host.AppHost: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Aspire Host.AppHost: http">
     <configuration name="AppHost: http" type="AspireHostConfiguration" factoryName="Aspire Host" activateToolWindowBeforeRun="false">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/AppHost/AppHost.csproj" />
@@ -160,6 +158,20 @@
       <workItem from="1735922899204" duration="19380000" />
       <workItem from="1735976736503" duration="4844000" />
       <workItem from="1735981601094" duration="7041000" />
+      <workItem from="1736081402622" duration="10442000" />
+      <workItem from="1736099661007" duration="570000" />
+      <workItem from="1736100337030" duration="290000" />
+      <workItem from="1736100682283" duration="59000" />
+      <workItem from="1736100917445" duration="3386000" />
+      <workItem from="1736353774017" duration="87000" />
+      <workItem from="1736353905768" duration="3436000" />
+      <workItem from="1736392983836" duration="249000" />
+      <workItem from="1736525941600" duration="2447000" />
+      <workItem from="1736528417702" duration="1706000" />
+      <workItem from="1736530134675" duration="1293000" />
+      <workItem from="1736531440185" duration="2004000" />
+      <workItem from="1736572671131" duration="3000" />
+      <workItem from="1736572684668" duration="7882000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -225,7 +237,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735986628385</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change access modifier of routes">
+      <option name="closed" value="true" />
+      <created>1736095400884</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736095400884</updated>
+    </task>
+    <task id="LOCAL-00010" summary="decrease replica number">
+      <option name="closed" value="true" />
+      <created>1736095434330</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736095434330</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add wait for">
+      <option name="closed" value="true" />
+      <created>1736100608710</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736100608710</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +279,9 @@
     <MESSAGE value="change domain name and fix route" />
     <MESSAGE value="fix routes" />
     <MESSAGE value="build file..." />
-    <option name="LAST_COMMIT_MESSAGE" value="build file..." />
+    <MESSAGE value="change access modifier of routes" />
+    <MESSAGE value="decrease replica number" />
+    <MESSAGE value="add wait for" />
+    <option name="LAST_COMMIT_MESSAGE" value="add wait for" />
   </component>
 </project>

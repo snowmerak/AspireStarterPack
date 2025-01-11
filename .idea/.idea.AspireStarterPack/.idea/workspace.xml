@@ -27,6 +27,9 @@
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterNodeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>

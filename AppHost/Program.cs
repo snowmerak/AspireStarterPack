@@ -1,12 +1,20 @@
 
 var builder = DistributedApplication.CreateBuilder(args);
 
+// var replicaSet = builder.AddContainerReplicaSet("redis",
+//     (builder, name) => builder.AddContainer(name, "docker.io/redis", tag: "7.4.2").WithEndpoint(targetPort: 6379, name: "redis").WithEndpoint(targetPort: 16379, name: "cluster"),
+//     interReplicaEndpoints: new []{"cluster"},
+//     outboundReplicaEndpoints: new []{"redis", "cluster"},
+//     replicaCount: 8);
+
+var cache = builder.AddValkey(name: "SharedCache");
+// replicaSet.InjectReferenceTo(cache);
+
 var reverseProxy = builder.AddReverseProxy("ReverseProxy")
     .WithReplicas(2)
     .WithExternalHttpEndpoints()
     .WithHttpEndpoint(name: "http", port: 5000, env: "PORT", isProxied: true);
 
-var cache = builder.AddValkey(name: "SharedCache");
 
 for (var i = 0; i < 4; i++)
 {

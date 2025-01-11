@@ -1,0 +1,13 @@
+version: v2
+clean: true
+managed:
+  enabled: true
+  disable:
+    - module: buf.build/googleapis/googleapis
+plugins:
+  - remote: buf.build/protocolbuffers/go
+    out: gen
+  - remote: buf.build/grpc/go
+    out: gen
+inputs:
+  - directory: ./proto

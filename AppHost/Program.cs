@@ -12,14 +12,13 @@ var reverseProxy = builder.AddReverseProxy("ReverseProxy")
     .WithReplicas(2)
     .WithExternalHttpEndpoints()
     .WithHttpEndpoint(name: "http", port: 5000, env: "PORT", isProxied: true);
-replicaSet.InjectReferenceTo(reverseProxy);
-
 
 for (var i = 0; i < 4; i++)
 {
     var name = $"EchoServer-{i}";
     var echoServer = builder.AddGolangApp(name, "../EchoServer")
         .WithHttpEndpoint(env: "PORT");
+    replicaSet.InjectReferenceTo(echoServer);
     reverseProxy.AddService("/echo", echoServer);
 }
 

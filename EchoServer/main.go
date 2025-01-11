@@ -4,9 +4,15 @@ import (
 	"context"
 	"errors"
 	"log"
+	"math/rand"
 	"net/http"
 	"os"
 	"os/signal"
+
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
+
+	"GrpcEchoServer/gen/echo"
 )
 
 func main() {
@@ -18,9 +24,30 @@ func main() {
 
 	server := &http.Server{Addr: ":" + addr}
 
+	grpcClientHosts := ReadGrpcHosts(replicaSetEnvKey)
+	log.Printf("Grpc client hosts: %v", grpcClientHosts)
+
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		name := request.URL.Query().Get("name")
-		writer.Write([]byte("Hello, " + name))
+
+		cli, err := grpc.NewClient(grpcClientHosts[rand.Intn(len(grpcClientHosts))], grpc.WithTransportCredentials(insecure.NewCredentials()))
+		if err != nil {
+			writer.Write([]byte(err.Error()))
+			writer.WriteHeader(http.StatusInternalServerError)
+			return
+		}
+		defer cli.Close()
+
+		echoCli := echo.NewEchoServiceClient(cli)
+
+		resp, err := echoCli.Echo(context.Background(), &echo.EchoRequest{Message: "Hello, " + name + "!"})
+		if err != nil {
+			writer.Write([]byte(err.Error()))
+			writer.WriteHeader(http.StatusInternalServerError)
+			return
+		}
+
+		writer.Write([]byte(resp.GetMessage()))
 	})
 
 	go func() {

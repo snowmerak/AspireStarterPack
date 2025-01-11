@@ -10,7 +10,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="what?" />
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="distribute ReplicaSetUtils">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +31,7 @@
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
@@ -299,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736580905916</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="distribute ReplicaSetUtils">
+      <option name="closed" value="true" />
+      <created>1736582564097</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736582564097</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +337,7 @@
     <MESSAGE value="make container replica set host" />
     <MESSAGE value="add Container Replica Set" />
     <MESSAGE value="what?" />
-    <option name="LAST_COMMIT_MESSAGE" value="what?" />
+    <MESSAGE value="distribute ReplicaSetUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="distribute ReplicaSetUtils" />
   </component>
 </project>

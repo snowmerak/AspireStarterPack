@@ -3,9 +3,11 @@ package main
 import (
 	"bytes"
 	"context"
+	"errors"
 	"log"
 	"net/http"
 	"os"
+	"os/signal"
 	"strconv"
 	"sync"
 
@@ -14,6 +16,9 @@ import (
 )
 
 func main() {
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
+	defer cancel()
+
 	generatedUUID, err := uuid.NewUUID()
 	if err != nil {
 		log.Fatalf("Failed to generate UUID: %v", err)
@@ -57,5 +62,18 @@ func main() {
 		writer.Write(buffer.Bytes())
 	})
 
-	http.ListenAndServe(":"+addr, nil)
+	server := &http.Server{Addr: ":" + addr}
+
+	go func() {
+		if err := server.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+			log.Fatalf("Failed to start server: %v", err)
+		}
+	}()
+
+	<-ctx.Done()
+	log.Printf("Shutting down server...")
+
+	if err := server.Shutdown(ctx); err != nil {
+		log.Fatalf("Failed to shutdown server: %v", err)
+	}
 }

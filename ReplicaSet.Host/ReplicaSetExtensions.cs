@@ -58,6 +58,61 @@ public static class ContainerReplicaSetExtensions
     }
 }
 
+public static class ExecutableReplicaSetExtensions
+{
+    public static IResourceBuilder<ExecutableReplicaSetResource> AddExecutableReplicaSet(
+        this IDistributedApplicationBuilder builder, [ResourceName] string name, Func<IDistributedApplicationBuilder, string, IResourceBuilder<ExecutableResource>> constructor, string[]? interReplicaEndpoints = null, string[]? outboundReplicaEndpoints = null, int replicas = 1)
+    {
+        var replicaSet = new ExecutableReplicaSetResource(name, interReplicaEndpoints, outboundReplicaEndpoints);
+        
+        foreach (var replicaName in ReplicaSetUtils.MakeReplicaNames(name, replicas))
+        {
+            var replica = constructor(builder, replicaName);
+            replicaSet.Replicas.Add(replica);
+        }
+        
+        foreach (var endpoint in interReplicaEndpoints ?? Array.Empty<string>())
+        {
+            for (var f = 0; f < replicaSet.Replicas.Count; f++)
+            {
+                for (var s = 0; s < replicaSet.Replicas.Count; s++)
+                {
+                    if (f == s) continue;
+                    replicaSet.Replicas[f].WithReference(replicaSet.Replicas[s].GetEndpoint(endpoint));
+                }
+            }
+        }
+        
+        return builder.AddResource(replicaSet);
+    }
+    
+    public static IResourceBuilder<ExecutableReplicaSetResource> InjectReferenceTo(
+        this IResourceBuilder<ExecutableReplicaSetResource> builder, IResourceBuilder<IResourceWithEnvironment> resourceBuilder)
+    {
+        var replicas = new List<string>();
+        
+        foreach (var endpoint in builder.Resource.OutboundReplicaEndpoints ?? Array.Empty<string>())
+        {
+            var endpoints = new List<string>();
+            
+            foreach (var replica in builder.Resource.Replicas)
+            {
+                resourceBuilder.WithReference(replica.GetEndpoint(endpoint));
+                endpoints.Add(ReplicaSetUtils.MakeServiceEndpointName(replica.Resource.Name, endpoint));
+            }
+
+            var replicaSetName = ReplicaSetUtils.MakeReplicaSetName(builder.Resource.Name, endpoint);
+            resourceBuilder.WithEnvironment(replicaSetName, () => string.Join(",", endpoints));
+            
+            replicas.Add(replicaSetName);
+        }
+
+        resourceBuilder.WithEnvironment(ReplicaSetUtils.MakeReplicaSetEnvKey, () => string.Join(",", replicas));
+        
+        return builder;
+    }
+}
+
 internal static class ReplicaSetUtils
 {
     internal static string MakeReplicaSetEnvKey => "ReplicaSet__Names";

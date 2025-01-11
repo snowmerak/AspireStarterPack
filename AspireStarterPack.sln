@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxy", "ReverseProx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxy.Host", "ReverseProxy.Host\ReverseProxy.Host.csproj", "{049529C6-AA26-4A59-86EC-1C72B86B237A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerReplicaSet.Host", "ContainerReplicaSet.Host\ContainerReplicaSet.Host.csproj", "{7EC19E05-47B0-4683-B847-ADC70D92325F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplicaSet.Host", "ReplicaSet.Host\ReplicaSet.Host.csproj", "{7EC19E05-47B0-4683-B847-ADC70D92325F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ContainerReplicaSet.Host\ContainerReplicaSet.Host.csproj" IsAspireProjectResource="false" />
+      <ProjectReference Include="..\ReplicaSet.Host\ReplicaSet.Host.csproj" IsAspireProjectResource="false" />
       <ProjectReference Include="..\ReverseProxy.Host\ReverseProxy.Host.csproj" IsAspireProjectResource="false" />
     </ItemGroup>
 

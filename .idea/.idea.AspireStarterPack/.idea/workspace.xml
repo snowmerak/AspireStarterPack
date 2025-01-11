@@ -10,15 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSet.Host.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireStarterPack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspireStarterPack.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.work" beforeDir="false" afterPath="$PROJECT_DIR$/go.work" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.work.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.work.sum" afterDir="false" />
-    </list>
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="what?" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,9 +23,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterNodeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -171,7 +166,7 @@
       <workItem from="1736530134675" duration="1293000" />
       <workItem from="1736531440185" duration="2004000" />
       <workItem from="1736572671131" duration="3000" />
-      <workItem from="1736572684668" duration="7882000" />
+      <workItem from="1736572684668" duration="8247000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -261,7 +256,47 @@
       <option name="project" value="LOCAL" />
       <updated>1736100608710</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="make grpc echo server">
+      <option name="closed" value="true" />
+      <created>1736580815795</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736580815795</updated>
+    </task>
+    <task id="LOCAL-00013" summary="make grpc echo server">
+      <option name="closed" value="true" />
+      <created>1736580852800</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736580852800</updated>
+    </task>
+    <task id="LOCAL-00014" summary="make container replica set host">
+      <option name="closed" value="true" />
+      <created>1736580867692</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736580867692</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add Container Replica Set">
+      <option name="closed" value="true" />
+      <created>1736580882703</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736580882703</updated>
+    </task>
+    <task id="LOCAL-00016" summary="what?">
+      <option name="closed" value="true" />
+      <created>1736580905916</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736580905916</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +317,10 @@
     <MESSAGE value="change access modifier of routes" />
     <MESSAGE value="decrease replica number" />
     <MESSAGE value="add wait for" />
-    <option name="LAST_COMMIT_MESSAGE" value="add wait for" />
+    <MESSAGE value="make grpc echo server" />
+    <MESSAGE value="make container replica set host" />
+    <MESSAGE value="add Container Replica Set" />
+    <MESSAGE value="what?" />
+    <option name="LAST_COMMIT_MESSAGE" value="what?" />
   </component>
 </project>

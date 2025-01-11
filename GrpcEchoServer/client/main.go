@@ -13,7 +13,7 @@ import (
 const remoteHost = "localhost:5005"
 
 func main() {
-	cli, err := grpc.NewClient(remoteHost, grpc.WithTransportCredentials(insecure.NewCredentials()), grpc.With)
+	cli, err := grpc.NewClient(remoteHost, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		panic(err)
 	}

@@ -1,8 +1,8 @@
 
 var builder = DistributedApplication.CreateBuilder(args);
 
-var replicaSet = builder.AddContainerReplicaSet("grpc-echo-server",
-    (builder, name) => builder.AddDockerfile(name, "../GrpcEchoServer").WithEndpoint(name: "grpc", targetPort: 5001, env: "PORT"),
+var replicaSet = builder.AddExecutableReplicaSet("grpc-echo-server",
+    (builder, name) => builder.AddGolangApp(name, "../GrpcEchoServer").WithEndpoint(name: "grpc", env: "PORT"),
     outboundReplicaEndpoints: new []{"grpc"},
     replicas: 8);
 

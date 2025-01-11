@@ -10,9 +10,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="distribute ReplicaSetUtils">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="add shutdown script">
+      <change afterPath="$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireStarterPack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspireStarterPack.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSet.Host.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ReplicaSet.Host/ReplicaSet.Host.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetResource.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,13 +35,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ContainerReplicaSet.Host/ContainerReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/obj/Debug/net9.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterNodeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -312,7 +320,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736582564097</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update container replica example">
+      <option name="closed" value="true" />
+      <created>1736583976194</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736583976194</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add shutdown script">
+      <option name="closed" value="true" />
+      <created>1736584804180</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736584804180</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,6 +362,8 @@
     <MESSAGE value="add Container Replica Set" />
     <MESSAGE value="what?" />
     <MESSAGE value="distribute ReplicaSetUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="distribute ReplicaSetUtils" />
+    <MESSAGE value="update container replica example" />
+    <MESSAGE value="add shutdown script" />
+    <option name="LAST_COMMIT_MESSAGE" value="add shutdown script" />
   </component>
 </project>

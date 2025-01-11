@@ -22,11 +22,11 @@ public static class ContainerReplicaSetExtensions
     private static string MakeReplicaSetName(string name, string endpoint) => $"ReplicaSet__{name}__{endpoint}";
     
     public static IResourceBuilder<ContainerReplicaSetResource> AddContainerReplicaSet(
-        this IDistributedApplicationBuilder builder, [ResourceName] string name, Func<IDistributedApplicationBuilder, string, IResourceBuilder<ContainerResource>> constructor, string[]? interReplicaEndpoints = null, string[]? outboundReplicaEndpoints = null, int replicaCount = 1)
+        this IDistributedApplicationBuilder builder, [ResourceName] string name, Func<IDistributedApplicationBuilder, string, IResourceBuilder<ContainerResource>> constructor, string[]? interReplicaEndpoints = null, string[]? outboundReplicaEndpoints = null, int replicas = 1)
     {
         var replicaSet = new ContainerReplicaSetResource(name, interReplicaEndpoints, outboundReplicaEndpoints);
         
-        foreach (var replicaName in MakeReplicaNames(name, replicaCount))
+        foreach (var replicaName in MakeReplicaNames(name, replicas))
         {
             var replica = constructor(builder, replicaName);
             replicaSet.Replicas.Add(replica);

@@ -16,16 +16,31 @@
             <mxPoint x="290" y="299.28932188134524" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="GFp72_mxuHO9eIhjEzk--20" value="http" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GFp72_mxuHO9eIhjEzk--10">
+          <mxGeometry x="-0.099" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="GFp72_mxuHO9eIhjEzk--11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="GFp72_mxuHO9eIhjEzk--19" target="GFp72_mxuHO9eIhjEzk--9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="420" as="sourcePoint" />
             <mxPoint x="290" y="520.7106781186548" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="GFp72_mxuHO9eIhjEzk--21" value="http" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GFp72_mxuHO9eIhjEzk--11">
+          <mxGeometry x="-0.0557" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="GFp72_mxuHO9eIhjEzk--12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="GFp72_mxuHO9eIhjEzk--8" target="GFp72_mxuHO9eIhjEzk--18">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="458" y="267.28932188134524" as="sourcePoint" />
             <mxPoint x="590" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFp72_mxuHO9eIhjEzk--23" value="tcp" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GFp72_mxuHO9eIhjEzk--12">
+          <mxGeometry x="-0.0067" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GFp72_mxuHO9eIhjEzk--15" value="ReplicaSet" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -44,6 +59,11 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="458" y="584" as="sourcePoint" />
             <mxPoint x="458" y="604.7106781186548" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFp72_mxuHO9eIhjEzk--22" value="grpc" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GFp72_mxuHO9eIhjEzk--17">
+          <mxGeometry x="0.0148" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GFp72_mxuHO9eIhjEzk--18" value="Valkey" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Cache.svg;" vertex="1" parent="1">

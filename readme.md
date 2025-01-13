@@ -16,6 +16,8 @@ dotnet run
 
 ## Default API
 
+![blueprint](./Documents/diagrams/blueprint.svg)
+
 ### echo
 
 - GET: http://localhost:5000/echo?name=world

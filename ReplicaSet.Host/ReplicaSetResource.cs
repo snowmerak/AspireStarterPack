@@ -1,25 +1,14 @@
-namespace Aspire.Hosting;
+using System.Collections.Immutable;
 
-using Aspire.Hosting.ApplicationModel;
+namespace Aspire.Hosting.ApplicationModel;
 
-public class ContainerReplicaSetResource(
-    string name,
-    string[]? interReplicaEndpoints = null,
-    string[]? outboundReplicaEndpoints = null) : ContainerResource(name)
+using ContainerReplicaSetResource = ReplicaSetResource<ContainerResource>;
+using ExecutableReplicaSetResource = ReplicaSetResource<ExecutableResource>;
+
+public class ReplicaSetResource<T>(string name) : ContainerResource(name) where T : IResourceWithEndpoints
 {
-    internal readonly string[]? InterReplicaEndpoints = interReplicaEndpoints;
-    internal readonly string[]? OutboundReplicaEndpoints = outboundReplicaEndpoints;
+    public ImmutableArray<string>? InterReplicaEndpoints { get; init; }
+    public ImmutableArray<string>? OutboundReplicaEndpoints { get; init; }
 
-    internal readonly List<IResourceBuilder<ContainerResource>> Replicas = [];
-}
-
-public class ExecutableReplicaSetResource(
-    string name,
-    string[]? interReplicaEndpoints = null,
-    string[]? outboundReplicaEndpoints = null) : ContainerResource(name)
-{
-    internal readonly string[]? InterReplicaEndpoints = interReplicaEndpoints;
-    internal readonly string[]? OutboundReplicaEndpoints = outboundReplicaEndpoints;
-
-    internal readonly List<IResourceBuilder<ExecutableResource>> Replicas = [];
+    internal readonly List<IResourceBuilder<T>> Replicas = [];
 }

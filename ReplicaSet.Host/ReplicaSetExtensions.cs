@@ -12,37 +12,31 @@ public static class ReplicaSetExtensions
             InterReplicaEndpoints = interReplicaEndpoints,
             OutboundReplicaEndpoints = outboundReplicaEndpoints,
         };
-        
+
+        var replicaList = replicaSet.Replicas;
         foreach (var replicaName in ReplicaSetUtils.MakeReplicaNames(name, replicas))
-        {
-            var replica = constructor(builder, replicaName);
-            replicaSet.Replicas.Add(replica);
-        }
-        
+            replicaList.Add(constructor(builder, replicaName));
+
+        var fs = from f in replicaList
+                 from s in replicaList
+                 where f != s
+                 select (f, s);
         foreach (var endpoint in interReplicaEndpoints ?? [])
-        {
-            for (var f = 0; f < replicaSet.Replicas.Count; f++)
-            {
-                for (var s = 0; s < replicaSet.Replicas.Count; s++)
-                {
-                    if (f == s) continue;
-                    replicaSet.Replicas[f].WithReference(replicaSet.Replicas[s].GetEndpoint(endpoint));
-                }
-            }
-        }
-        
+            foreach (var (f, s) in fs)
+                f.WithReference(s.GetEndpoint(endpoint));
+
         return builder.AddResource(replicaSet);
     }
-    
+
     public static IResourceBuilder<ReplicaSetResource<T>> InjectReferenceTo<T>(
         this IResourceBuilder<ReplicaSetResource<T>> builder, IResourceBuilder<IResourceWithEnvironment> resourceBuilder) where T : IResourceWithEndpoints
     {
         var replicas = new List<string>();
-        
+
         foreach (var endpoint in builder.Resource.OutboundReplicaEndpoints ?? [])
         {
             var endpoints = new List<string>();
-            
+
             foreach (var replica in builder.Resource.Replicas)
             {
                 resourceBuilder.WithReference(replica.GetEndpoint(endpoint));
@@ -51,12 +45,12 @@ public static class ReplicaSetExtensions
 
             var replicaSetName = ReplicaSetUtils.MakeReplicaSetName(builder.Resource.Name, endpoint);
             resourceBuilder.WithEnvironment(replicaSetName, () => string.Join(",", endpoints));
-            
+
             replicas.Add(replicaSetName);
         }
 
         resourceBuilder.WithEnvironment(ReplicaSetUtils.MakeReplicaSetEnvKey, () => string.Join(",", replicas));
-        
+
         return builder;
     }
 }
@@ -64,9 +58,9 @@ public static class ReplicaSetExtensions
 internal static class ReplicaSetUtils
 {
     internal static string MakeReplicaSetEnvKey => "ReplicaSet__Names";
-    
+
     internal static string MakeServiceEndpointName(string name, string endpoint) => $"services__{name}__{endpoint}__0";
-    
+
     internal static string[] MakeReplicaNames(string name, int count)
     {
         var names = new string[count];

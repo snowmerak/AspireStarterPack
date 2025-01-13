@@ -1,9 +1,8 @@
-
 var builder = DistributedApplication.CreateBuilder(args);
 
-var replicaSet = builder.AddExecutableReplicaSet("grpc-echo-server",
+var replicaSet = builder.AddReplicaSet<ExecutableResource>("grpc-echo-server",
     (builder, name) => builder.AddGolangApp(name, "../GrpcEchoServer").WithEndpoint(name: "grpc", env: "PORT"),
-    outboundReplicaEndpoints: new []{"grpc"},
+    outboundReplicaEndpoints: ["grpc"],
     replicas: 8);
 
 var cache = builder.AddValkey(name: "SharedCache");

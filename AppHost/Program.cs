@@ -35,10 +35,4 @@ for (var i = 0; i < 3; i++)
     reverseProxy.AddService("/count", counterServer);
 }
 
-// shutdown immediately all the services
-foreach (var builderResource in builder.Resources)
-{
-    builderResource.
-}
-
 builder.Build().Run();

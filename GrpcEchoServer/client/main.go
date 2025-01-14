@@ -10,7 +10,7 @@ import (
 	"GrpcEchoServer/gen/echo"
 )
 
-const remoteHost = "localhost:5005"
+const remoteHost = "localhost:34915"
 
 func main() {
 	cli, err := grpc.NewClient(remoteHost, grpc.WithTransportCredentials(insecure.NewCredentials()))

@@ -2,8 +2,13 @@ package main
 
 import (
 	"context"
+	"errors"
+	"log"
 	"net"
+	"net/http"
 	"os"
+	"os/signal"
+	"sync"
 
 	"google.golang.org/grpc"
 
@@ -11,22 +16,61 @@ import (
 )
 
 func main() {
-	server := grpc.NewServer()
-	echo.RegisterEchoServiceServer(server, &Server{})
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
+	defer cancel()
 
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "50051"
-	}
+	shutdownCompleted := new(sync.WaitGroup)
+	shutdownCompleted.Add(1)
+	go func() {
 
-	lis, err := net.Listen("tcp", ":"+port)
-	if err != nil {
-		panic(err)
-	}
+		server := grpc.NewServer()
+		echo.RegisterEchoServiceServer(server, &Server{})
 
-	if err := server.Serve(lis); err != nil {
-		panic(err)
-	}
+		grpcPort := os.Getenv("GRPC_PORT")
+		if grpcPort == "" {
+			grpcPort = "50051"
+		}
+
+		lis, err := net.Listen("tcp", ":"+grpcPort)
+		if err != nil {
+			panic(err)
+		}
+
+		context.AfterFunc(ctx, func() {
+			server.GracefulStop()
+			shutdownCompleted.Done()
+		})
+
+		if err := server.Serve(lis); err != nil && !errors.Is(err, grpc.ErrServerStopped) {
+			panic(err)
+		}
+	}()
+
+	shutdownCompleted.Add(1)
+	go func() {
+		healthPort := os.Getenv("HEALTH_PORT")
+		if healthPort == "" {
+			healthPort = "8080"
+		}
+
+		httpServer := &http.Server{Addr: ":" + healthPort}
+		router := http.NewServeMux()
+		router.HandleFunc("/healthz", func(writer http.ResponseWriter, request *http.Request) {
+			writer.WriteHeader(http.StatusOK)
+		})
+		httpServer.Handler = router
+
+		context.AfterFunc(ctx, func() {
+			defer shutdownCompleted.Done()
+
+			if err := httpServer.Shutdown(context.TODO()); err != nil {
+				log.Printf("Failed to shut down health server: %v", err)
+			}
+		})
+	}()
+
+	shutdownCompleted.Wait()
+	log.Printf("server has been shut down")
 }
 
 type Server struct {

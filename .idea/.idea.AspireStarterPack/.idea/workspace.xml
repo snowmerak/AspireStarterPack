@@ -10,11 +10,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="apply ExecutableReplicaSet">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EchoServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/EchoServer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CounterServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/CounterServer/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GrpcEchoServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcEchoServer/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +180,9 @@
       <workItem from="1736531440185" duration="2004000" />
       <workItem from="1736572671131" duration="3000" />
       <workItem from="1736572684668" duration="8247000" />
+      <workItem from="1736588016639" duration="145000" />
+      <workItem from="1736588170734" duration="1551000" />
+      <workItem from="1736814862670" duration="3187000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -348,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736586123215</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add powershell shutdown script">
+      <option name="closed" value="true" />
+      <created>1736587542315</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736587542315</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +390,7 @@
     <MESSAGE value="add shutdown script" />
     <MESSAGE value="change ContainerReplicaSet to ReplicaSet" />
     <MESSAGE value="apply ExecutableReplicaSet" />
-    <option name="LAST_COMMIT_MESSAGE" value="apply ExecutableReplicaSet" />
+    <MESSAGE value="add powershell shutdown script" />
+    <option name="LAST_COMMIT_MESSAGE" value="add powershell shutdown script" />
   </component>
 </project>

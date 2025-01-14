@@ -41,6 +41,10 @@ func main() {
 		},
 	}
 
+	http.HandleFunc("/healthz", func(writer http.ResponseWriter, request *http.Request) {
+		writer.WriteHeader(http.StatusOK)
+	})
+
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		v, err := cacheClient.Do(request.Context(), cacheClient.B().Incr().Key("counter").Build()).AsInt64()
 		if err != nil {

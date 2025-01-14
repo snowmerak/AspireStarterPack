@@ -27,6 +27,10 @@ func main() {
 	grpcClientHosts := ReadGrpcHosts(replicaSetEnvKey)
 	log.Printf("Grpc client hosts: %v", grpcClientHosts)
 
+	http.HandleFunc("/healthz", func(writer http.ResponseWriter, request *http.Request) {
+		writer.WriteHeader(http.StatusOK)
+	})
+
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		name := request.URL.Query().Get("name")
 

@@ -19,7 +19,8 @@ for (var i = 0; i < 2; i++)
 {
     var name = $"EchoServer-{i}";
     var echoServer = builder.AddGolangApp(name, "../EchoServer")
-        .WithHttpEndpoint(env: "PORT");
+        .WithHttpEndpoint(env: "PORT")
+        .WithHttpHealthCheck("/healthz", 200, endpointName: "http");
     replicaSet.InjectReferenceTo(echoServer);
     reverseProxy.AddService("/echo", echoServer);
 }

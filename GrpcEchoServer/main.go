@@ -67,6 +67,10 @@ func main() {
 				log.Printf("Failed to shut down health server: %v", err)
 			}
 		})
+
+		if err := httpServer.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
+			panic(err)
+		}
 	}()
 
 	shutdownCompleted.Wait()

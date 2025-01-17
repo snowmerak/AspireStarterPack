@@ -8,7 +8,7 @@ var replicaSet = builder.AddReplicaSet<ExecutableResource>("grpc-echo-server",
     outboundReplicaEndpoints: ["grpc"],
     replicas: 4);
 
-var cache = builder.AddValkey(name: "SharedCache");
+var cache = builder.AddValkeyCluster("distributed-cache", "../ValkeyCluster.Host");
 
 var reverseProxy = builder.AddReverseProxy("ReverseProxy")
     .WithReplicas(2)
@@ -30,9 +30,9 @@ for (var i = 0; i < 3; i++)
     var name = $"CounterServer-{i}";
     var counterServer = builder.AddGolangApp(name, "../CounterServer")
         .WithHttpEndpoint(name: "http", env: "PORT")
-        .WithHttpHealthCheck("/healthz", 200, "http")
-        .WithReference(cache)
-        .WaitFor(cache);
+        .WithHttpHealthCheck("/healthz", 200, "http");
+    cache.InjectReplicaReferenceTo(counterServer);
+    cache.MakeWaitMe(counterServer);
     reverseProxy.AddService("/count", counterServer);
 }
 

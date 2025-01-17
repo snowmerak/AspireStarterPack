@@ -9,6 +9,7 @@ import (
 	"os"
 	"os/signal"
 	"strconv"
+	"strings"
 	"sync"
 
 	"github.com/google/uuid"
@@ -25,8 +26,10 @@ func main() {
 	}
 	id := generatedUUID.String()
 
+	cacheHosts := os.Getenv("distributed-cache__nodes")
+
 	cacheClient, err := valkey.NewClient(valkey.ClientOption{
-		InitAddress: []string{os.Getenv("ConnectionStrings__SharedCache")},
+		InitAddress: strings.Split(cacheHosts, ","),
 	})
 	if err != nil {
 		log.Fatalf("Failed to create cache client: %v", err)

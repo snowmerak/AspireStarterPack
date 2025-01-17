@@ -5,17 +5,19 @@
     <projectFile aspireProfileName="https">AppHost/AppHost.csproj</projectFile>
     <projectFile profileName="http">ReverseProxy/ReverseProxy.csproj</projectFile>
     <projectFile profileName="https">ReverseProxy/ReverseProxy.csproj</projectFile>
+    <projectFile kind="Docker">ValkeyCluster.Host/ValkeyCluster.Host.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="">
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="make replicas to public">
+      <change afterPath="$PROJECT_DIR$/ValkeyCluster.Host/ValkeyCluster.Host.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AspireStarterPack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspireStarterPack.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CounterServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/CounterServer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcEchoServer/client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GrpcEchoServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/GrpcEchoServer/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,19 +31,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/AppHost/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ContainerReplicaSet.Host/ContainerReplicaSetExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReplicaSet.Host/ReplicaSetResource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/obj/Debug/net9.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterNodeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterResource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/obj/Debug/net9.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -150,6 +147,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="ValkeyCluster.Host/Node.Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="valkeycluster.host" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="sourceFilePath" value="ValkeyCluster.Host/Node.Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -182,7 +197,10 @@
       <workItem from="1736572684668" duration="8247000" />
       <workItem from="1736588016639" duration="145000" />
       <workItem from="1736588170734" duration="1551000" />
-      <workItem from="1736814862670" duration="3187000" />
+      <workItem from="1736814862670" duration="6960000" />
+      <workItem from="1737133491240" duration="6000" />
+      <workItem from="1737133535785" duration="7430000" />
+      <workItem from="1737140984356" duration="14373000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -360,7 +378,55 @@
       <option name="project" value="LOCAL" />
       <updated>1736587542315</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="remove error">
+      <option name="closed" value="true" />
+      <created>1736818710241</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1736818710241</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add health check route">
+      <option name="closed" value="true" />
+      <created>1736821269248</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736821269248</updated>
+    </task>
+    <task id="LOCAL-00025" summary="listen health check">
+      <option name="closed" value="true" />
+      <created>1736821289325</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736821289325</updated>
+    </task>
+    <task id="LOCAL-00026" summary="enable health check in echo server">
+      <option name="closed" value="true" />
+      <created>1736821301273</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1736821301273</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add WithReference">
+      <option name="closed" value="true" />
+      <created>1737136269560</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1737136269560</updated>
+    </task>
+    <task id="LOCAL-00028" summary="make replicas to public">
+      <option name="closed" value="true" />
+      <created>1737149289853</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1737149289853</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,8 +436,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="init project" />
-    <MESSAGE value="make reverse proxy configurator" />
     <MESSAGE value="refactor reverse proxy code" />
     <MESSAGE value="make counter server" />
     <MESSAGE value="add counter server" />
@@ -391,6 +455,12 @@
     <MESSAGE value="change ContainerReplicaSet to ReplicaSet" />
     <MESSAGE value="apply ExecutableReplicaSet" />
     <MESSAGE value="add powershell shutdown script" />
-    <option name="LAST_COMMIT_MESSAGE" value="add powershell shutdown script" />
+    <MESSAGE value="remove error" />
+    <MESSAGE value="add health check route" />
+    <MESSAGE value="listen health check" />
+    <MESSAGE value="enable health check in echo server" />
+    <MESSAGE value="add WithReference" />
+    <MESSAGE value="make replicas to public" />
+    <option name="LAST_COMMIT_MESSAGE" value="make replicas to public" />
   </component>
 </project>

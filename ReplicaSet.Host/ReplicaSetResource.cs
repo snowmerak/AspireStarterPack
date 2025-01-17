@@ -10,5 +10,5 @@ public class ReplicaSetResource<T>(string name) : ContainerResource(name) where 
     public ImmutableArray<string>? InterReplicaEndpoints { get; init; }
     public ImmutableArray<string>? OutboundReplicaEndpoints { get; init; }
 
-    internal readonly List<IResourceBuilder<T>> Replicas = [];
+    public readonly List<IResourceBuilder<T>> Replicas = [];
 }

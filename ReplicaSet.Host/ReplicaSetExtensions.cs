@@ -53,6 +53,17 @@ public static class ReplicaSetExtensions
 
         return builder;
     }
+
+    public static IResourceBuilder<ReplicaSetResource<T>> WithReference<T>(
+        this IResourceBuilder<ReplicaSetResource<T>> builder, string key, string value) where T : IResourceWithEndpoints, IResourceWithEnvironment
+    {
+        foreach (var replica in builder.Resource.Replicas)
+        {
+            replica.WithEnvironment(key, value);
+        }
+
+        return builder;
+    }
 }
 
 internal static class ReplicaSetUtils

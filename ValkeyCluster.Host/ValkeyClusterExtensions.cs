@@ -39,10 +39,10 @@ public static class ValkeyClusterExtensions
                 }
                 var clusterEndpoint = nodeBuilder.GetEndpoint(ValkeyClusterResource.ValkeyCluterEndpoint);
                 var nodeEndpoint = nodeBuilder.GetEndpoint(ValkeyClusterResource.ValkeyNodeEndpoint);
-                nodeAddresses.Add(() => $"{nodeEndpoint.Resource.Name}:{nodeEndpoint.TargetPort?.ToString() ?? nodeEndpoint.Port.ToString()}");
-                nodeBuilder.WithEnvironment("VALKEY_CLUSTER_ANNOUNCE_IP", () => nodeEndpoint.Host)
-                    .WithEnvironment("VALKEY_CLUSTER_ANNOUNCE_PORT", () => nodeEndpoint.Port.ToString())
-                    .WithEnvironment("VALKEY_CLUSTER_ANNOUNCE_BUS_PORT", () => clusterEndpoint.Port.ToString());
+                nodeAddresses.Add(() => $"{nodeBuilder.Resource.Name}:{nodeEndpoint.TargetPort?.ToString() ?? nodeEndpoint.Port.ToString()}");
+                nodeBuilder.WithEnvironment("VALKEY_CLUSTER_ANNOUNCE_IP", () => nodeBuilder.Resource.Name)
+                    .WithEnvironment("VALKEY_CLUSTER_ANNOUNCE_PORT", () => nodeEndpoint.TargetPort?.ToString() ?? nodeEndpoint.Port.ToString())
+                    .WithEnvironment("VALKEY_CLUSTER_ANNOUNCE_BUS_PORT", () => clusterEndpoint.TargetPort?.ToString() ?? clusterEndpoint.Port.ToString());
                 constBuilder.WaitFor(nodeBuilder);
                 return nodeBuilder;
             }, 
@@ -89,7 +89,7 @@ public static class ValkeyClusterExtensions
             foreach (var replica in builder.Resource.Nodes.Resource.Replicas)
             {
                 var endpoint = replica.GetEndpoint(ValkeyClusterResource.ValkeyNodeEndpoint);
-                endpoints.Add($"{endpoint.Host}:{endpoint.Port.ToString()}");
+                endpoints.Add($"{endpoint.Resource.Name}:{endpoint.TargetPort?.ToString() ?? endpoint.Port.ToString()}");
             }
             return string.Join(",", endpoints);
         });

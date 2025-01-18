@@ -11,13 +11,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="make replicas to public">
-      <change afterPath="$PROJECT_DIR$/ValkeyCluster.Host/ValkeyCluster.Host.csproj" afterDir="false" />
+    <list default="true" id="44b14198-4a75-4314-897e-36790e7361b2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AspireStarterPack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AspireStarterPack.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AspireStarterPack.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CounterServer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/CounterServer/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +30,8 @@
     <setting file="file://$PROJECT_DIR$/AppHost/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/ReplicaSetResource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ReplicaSet.Host/ReplicaSetResource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReplicaSet.Host/obj/Debug/net9.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/yongmin/projects/snowmerak/AspireStarterPack/ValkeyCluster.Host/ValkeyClusterExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/ValkeyClusterResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ValkeyCluster.Host/obj/Debug/net9.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" root0="FORCE_HIGHLIGHTING" />
@@ -200,7 +196,12 @@
       <workItem from="1736814862670" duration="6960000" />
       <workItem from="1737133491240" duration="6000" />
       <workItem from="1737133535785" duration="7430000" />
-      <workItem from="1737140984356" duration="14373000" />
+      <workItem from="1737140984356" duration="14849000" />
+      <workItem from="1737176056619" duration="475000" />
+      <workItem from="1737178197948" duration="4280000" />
+      <workItem from="1737182494676" duration="757000" />
+      <workItem from="1737183267812" duration="435000" />
+      <workItem from="1737213866484" duration="1711000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -426,7 +427,39 @@
       <option name="project" value="LOCAL" />
       <updated>1737149289853</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="make valkey cluster host">
+      <option name="closed" value="true" />
+      <created>1737155794415</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1737155794415</updated>
+    </task>
+    <task id="LOCAL-00030" summary="apply valkey cluster">
+      <option name="closed" value="true" />
+      <created>1737155806059</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1737155806059</updated>
+    </task>
+    <task id="LOCAL-00031" summary="apply valkey cluster">
+      <option name="closed" value="true" />
+      <created>1737155811369</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1737155811369</updated>
+    </task>
+    <task id="LOCAL-00032" summary="make docker init">
+      <option name="closed" value="true" />
+      <created>1737155830911</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1737155830911</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,9 +469,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="refactor reverse proxy code" />
-    <MESSAGE value="make counter server" />
-    <MESSAGE value="add counter server" />
     <MESSAGE value="change domain name and fix route" />
     <MESSAGE value="fix routes" />
     <MESSAGE value="build file..." />
@@ -461,6 +491,9 @@
     <MESSAGE value="enable health check in echo server" />
     <MESSAGE value="add WithReference" />
     <MESSAGE value="make replicas to public" />
-    <option name="LAST_COMMIT_MESSAGE" value="make replicas to public" />
+    <MESSAGE value="make valkey cluster host" />
+    <MESSAGE value="apply valkey cluster" />
+    <MESSAGE value="make docker init" />
+    <option name="LAST_COMMIT_MESSAGE" value="make docker init" />
   </component>
 </project>
